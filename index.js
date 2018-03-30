@@ -4,19 +4,6 @@ const commentTemplate = document.getElementById('comment-template').innerHTML
 const commentsTemplate = document.getElementById('comments-template').innerHTML
 const page = document.getElementById('page')
 
-function postComment() {
-  let commenter = document.getElementById("commenterName").value;
-  let comment = document.getElementById("commentText").value;
-
-  let templateFn = _.template(commentTemplate);
-
-  let commentsDiv = document.getElementById("comments");
-
-  let templateHTML = templateFn({ 'comment': comment, 'commenter': commenter });
-
-  commentsDiv.innerHTML += templateHTML;
-}
-
 function createPost() {
   let title = document.getElementById('postTitle').value
   let body = document.getElementById('postBody').value
@@ -29,4 +16,17 @@ function createPost() {
   })
 
   page.innerHTML = _.template(pageTemplate)({post: postHTML})
+}
+
+function postComment() {
+  let commenter = document.getElementById("commenterName").value;
+  let comment = document.getElementById("commentText").value;
+
+  let templateFn = _.template(commentTemplate);
+
+  let commentsDiv = document.getElementById("comments");
+
+  let templateHTML = templateFn({ 'comment': comment, 'commenter': commenter });
+
+  commentsDiv.innerHTML += templateHTML;
 }
