@@ -28,4 +28,5 @@ function createPost() {
     author: author
   })
 
+  page.html = _.template(pageTemplate)({post: postHTML})
 }
