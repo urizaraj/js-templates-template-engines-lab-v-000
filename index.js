@@ -21,7 +21,7 @@ function createPost() {
   let body = $('#postBody').value
   let author = $('#postAuthor').value
 
-  postHTML = _.template(postTemplate)({
+  let postHTML = _.template(postTemplate)({
     title: title,
     body: body,
     author: author
