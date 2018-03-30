@@ -1,5 +1,6 @@
 const pageTemplate = $('#page-template').html
 const commentTemplate = $('#comment-template').html
+const commentsTemplate = $('#comments-template').html
 
 function postComment() {
   let commenter = document.getElementById("commenterName").value;
