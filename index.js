@@ -15,3 +15,7 @@ function postComment() {
 
   commentsDiv.innerHTML += templateHTML;
 }
+
+function createPost() {
+
+}
