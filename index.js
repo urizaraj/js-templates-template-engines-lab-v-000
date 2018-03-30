@@ -1,7 +1,7 @@
-const pageTemplate = $('#page-template').html
-const commentTemplate = $('#comment-template').html
-const commentsTemplate = $('#comments-template').html
-const page = $('#page')
+const pageTemplate = document.getElementById('page-template').innerHTML
+const commentTemplate = document.getElementById('comment-template').innerHTML
+const commentsTemplate = document.getElementById('comments-template').innerHTML
+const page = document.getElementById('page')
 
 function postComment() {
   let commenter = document.getElementById("commenterName").value;
@@ -18,9 +18,9 @@ function postComment() {
 }
 
 function createPost() {
-  let title = $('#postTitle').value
-  let body = $('#postBody').value
-  let author = $('#postAuthor').value
+  let title = document.getElementById('postTitle').value
+  let body = document.getElementById('postBody').value
+  let author = document.getElementById('postAuthor').value
 
   let postHTML = _.template(postTemplate)({
     title: title,
