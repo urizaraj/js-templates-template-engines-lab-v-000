@@ -5,7 +5,12 @@
   </head>
   <body>
     <main>
-
+      <form onsubmit="createPost();return false;">
+        Name: <input type="text" id="postTitle"><br>
+        Comment: <input type="textarea" id="postBody"><br>
+        Author: <input type="text" id="postAuthor">
+        <input type="submit">
+      </form>
     </main>
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3/jquery.min.js"></script>
