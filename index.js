@@ -1,4 +1,5 @@
 const pageTemplate = document.getElementById('page-template').innerHTML
+const postTemplate = document.getElementById('post-template').innerHTML
 const commentTemplate = document.getElementById('comment-template').innerHTML
 const commentsTemplate = document.getElementById('comments-template').innerHTML
 const page = document.getElementById('page')
