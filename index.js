@@ -8,7 +8,6 @@ function postComment() {
   let commenter = document.getElementById("commenterName").value;
   let comment = document.getElementById("commentText").value;
 
-
   let templateFn = _.template(commentTemplate);
 
   let commentsDiv = document.getElementById("comments");
