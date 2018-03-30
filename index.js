@@ -29,5 +29,5 @@ function createPost() {
     author: author
   })
 
-  page.html = _.template(pageTemplate)({post: postHTML})
+  page.innerHTML = _.template(pageTemplate)({post: postHTML})
 }
