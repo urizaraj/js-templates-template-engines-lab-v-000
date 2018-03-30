@@ -27,9 +27,15 @@
     <div class="post">
       <%- post %>
     </div>
+    <form onsubmit="postComment();return false;">
+      Name: <input type="text" id="commenterName"><br>
+      Comment: <input type="textarea" id="commentText"><br>
+      <input type="submit">
+    </form>
     <div id="comments">
 
     </div>
+
     </script>
 
     <script id='post-template' type="text/x-lodash-template">
