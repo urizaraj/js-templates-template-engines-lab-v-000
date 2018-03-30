@@ -1,6 +1,7 @@
 const pageTemplate = $('#page-template').html
 const commentTemplate = $('#comment-template').html
 const commentsTemplate = $('#comments-template').html
+const page = $('#page')
 
 function postComment() {
   let commenter = document.getElementById("commenterName").value;
@@ -26,4 +27,5 @@ function createPost() {
     body: body,
     author: author
   })
+
 }
