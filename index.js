@@ -16,6 +16,7 @@ function createPost() {
   })
 
   page.innerHTML = _.template(pageTemplate)({post: postHTML})
+  page.innerHTML += _.template(commentsTemplate)
 }
 
 function postComment() {
