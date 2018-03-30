@@ -20,4 +20,10 @@ function createPost() {
   let title = $('#postTitle').value
   let body = $('#postBody').value
   let author = $('#postAuthor').value
+
+  postHTML = _.template(postTemplate)({
+    title: title,
+    body: body,
+    author: author
+  })
 }
