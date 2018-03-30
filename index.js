@@ -17,5 +17,7 @@ function postComment() {
 }
 
 function createPost() {
-
+  let title = $('#postTitle').value
+  let body = $('#postBody').value
+  let author = $('#postAuthor').value
 }
